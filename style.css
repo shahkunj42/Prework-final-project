@@ -1,14 +1,24 @@
 header {
     background-color: bisque;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     text-align: center;
     font-family: cursive;
 }
 li {
     display: inline;
-    width: 25%;
+    padding: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+article{
+    background: #34ebdb;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+article p {
+    color: #4b3d52;
+}
 body {
-    background: blue;
+    background: white;
 }
