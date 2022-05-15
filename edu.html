@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./assets/jquery.js"></script>
     <title>Education and Skills</title>
 </head>
+<style>
+    div {
+        height: 200px;
+        background-size: cover;
+        position: relative;
+        margin: 40px 0 0 0;
+        border-radius: 12px;
+  }
+    div p {
+        color: rgba(255,255,255,1);
+        background: black;
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        border-radius: 12px;
+        padding: 10px;
+        line-height: 28px;
+        text-align: justify;
+        position: relative;
+        bottom: 0;
+        margin: 0;
+        height: 30px;
+        transition: height .5s;
+        -webkit-transition: height .5s;
+        -moz-transition: height .5s;
+  }
+    small {
+  opacity: 0;
+    }
+    .show-description p {
+  height: 150px;
+    }
+    .show-description small {
+  opacity: 1;
+    }
+    .click{
+      float: right;
+    }
+  </style>
 <body>
-    <h1>Education</h1>
+    <header>
+        <h1>Education</h1>
+        <h2 id="Header-Description">Student at Flatiron's School for Software Engineering</h2>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./edu.html">Education and Skillsets</a></li>
+            <li><a href="./proj.html">My Projects</a></li>
+            <li><a href="./contact.html">Contact Info</a></li>
+        </ul>
+    </header>
+    <article>
+        <div class="edu">
+            <p>Education and previous employment <span class="click">click to show</span><br />
+            <small>Graduated highschool from Delaware Military academy in 2013</small></p>
+        </div>
+        <div class="skills">
+            <p>Skills <span class="click">click to show</span><br />
+            <small>Leadership, teamwork, JavaScript, HTML, CSS</small></p>
+        </div>
+    </article>
+    <script>
+      $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+    </script>
+
 </body>
 </html>
