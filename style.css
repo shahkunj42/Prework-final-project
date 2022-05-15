@@ -1,9 +1,22 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 header {
-    background-color: bisque;
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
     text-align: center;
+    background: url('./header-background-prework.jpg');
+    background-position: center;
+    opacity: 0.95;
+}
+h1{
+    font-size: 75px;
     font-family: cursive;
+}
+ul {
+    background-color: grey;
+    padding: 10px;
 }
 li {
     display: inline;
@@ -11,14 +24,26 @@ li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 article{
-    background: #34ebdb;
+    background: rgba(161, 237, 234, 0.75);
     max-width: 1000px;
     text-align: center;
     margin: auto;
+    border: 0px;
+    border-radius: 15px;
 }
+
+article h2 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
 article p {
-    color: #4b3d52;
+    color: #552074;
+    font-size: larger;
 }
+
 body {
-    background: white;
+    background: url('./Prework-body-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
