@@ -9,31 +9,31 @@
     <title>Education and Skills</title>
 </head>
 <style>
-    div {
-        height: 200px;
-        background-size: cover;
-        position: relative;
-        margin: 40px 0 0 0;
-        border-radius: 12px;
-  }
-    div p {
-        color: rgba(255,255,255,1);
-        background: black;
-        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        border-radius: 12px;
-        padding: 10px;
-        line-height: 28px;
-        text-align: justify;
-        position: relative;
-        bottom: 0;
-        margin: 0;
-        height: 30px;
-        transition: height .5s;
-        -webkit-transition: height .5s;
-        -moz-transition: height .5s;
-  }
+  div {
+      height: 200px;
+      background-size: cover;
+      position: relative;
+      margin: 40px 0 0 0;
+      border-radius: 12px;
+    }
+  div p {
+      color: rgba(255,255,255,1);
+      background: black;
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      border-radius: 12px;
+      padding: 10px;
+      line-height: 28px;
+      text-align: justify;
+      position: relative;
+      bottom: 0;
+      margin: 0;
+      height: 30px;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+    }
     small {
   opacity: 0;
     }
@@ -46,12 +46,12 @@
     .click{
       float: right;
     }
-  </style>
+</style>
 <body>
     <header>
         <h1>Education</h1>
         <h2 id="Header-Description">Student at Flatiron's School for Software Engineering</h2>
-        <ul>
+        <ul class="pages">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./edu.html">Education and Skillsets</a></li>
             <li><a href="./proj.html">My Projects</a></li>
@@ -60,12 +60,19 @@
     </header>
     <article>
         <div class="edu">
-            <p>Education and previous employment <span class="click">click to show</span><br />
-            <small>Graduated highschool from Delaware Military academy in 2013</small></p>
+          <p>Education and previous employment <span class="click">click to show</span><br />           
+              <small>Graduated highschool from Delaware Military academy in 2013</small><br>
+              <small>Attended UMBC from 2013 to 2015</small><br>
+              <small>Worked at pepboys as a customer service rep and parts specialist in 2016</small><br>
+              <small>Worked at Siemens Healthineers in the Flex production room from 2018 to 2022</small>         
+          </p>
         </div>
         <div class="skills">
             <p>Skills <span class="click">click to show</span><br />
-            <small>Leadership, teamwork, JavaScript, HTML, CSS</small></p>
+            <small>I am a leader who also excels in teamwork. I am always willing to lend a hand to train new 
+              employees, or help my fellow associates.</small><br>
+              <small>I have some beginner programming experience with JavaScript, CSS, and HTML</small>
+            </p>
         </div>
     </article>
     <script>
@@ -73,6 +80,5 @@
         $(this).toggleClass('show-description');
     });
     </script>
-
 </body>
 </html>

@@ -14,14 +14,17 @@ h1{
     font-size: 75px;
     font-family: cursive;
 }
-ul {
+ul.pages{
     background-color: grey;
     padding: 10px;
 }
-li {
+ul.pages li {
     display: inline;
     padding: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: blue;
 }
 article{
     background: rgba(161, 237, 234, 0.75);
@@ -40,6 +43,9 @@ article h2 {
 article p {
     color: #552074;
     font-size: larger;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 body {
